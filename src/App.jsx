@@ -9,8 +9,12 @@ import React, { useState} from "react";
 function App() {
   const [showModal, setShowModal] = useState(false) 
   
+  return(
+    <Counter />
+  )
   return (
-    <>
+    <> 
+
       <Title />
       <div>
         <input
@@ -29,7 +33,7 @@ function App() {
       {showModal ? <Modal title="Are you sure?" /> : null}
       {/* {isModalOpen && <Modal title="Are you sure?" />} */}
       {/* {isModalOpen ? <Modal title="Are you sure?" /> : <></>} */}
-      <Counter />
+      
     </>
   );
 }
